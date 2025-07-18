@@ -5,12 +5,14 @@ function Nav() {
     <div className="Nav">
         <h1>Food Factory</h1>
             <p><Search /></p>
-        <div id = "item">
-        <a href="">Home</a>
-        <a href="">About us </a>
-        <a href = "">Braverage </a>
-        <a href="">Contact</a>
-        </div>
+        <nav id = "item">
+          <ul>
+       <li><a href="">Home</a></li>
+        <li><a href="">About us </a></li>
+        <li><a href = "">Braverage </a></li>
+        <li><a href="">Contact</a></li>
+        </ul>
+        </nav>
       
     </div>
   );

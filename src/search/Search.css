@@ -5,6 +5,7 @@
     border-radius : 20px;
     padding-left: 30px;
     background-color: #F3F3F3;
+    margin-top: 22px;
     
 }
 
@@ -26,17 +27,17 @@
 }
 
 #Search-btn::placeholder {
-    padding-left: 60px;
+    padding-left: 30px;
     font-size: 18px;
     font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
 }
 .location {
     position: absolute;
-    margin-left : 310px;
-    top : 340px;
+    margin-left : 300px;
+    top : 359px;
     height: 24px;
-    width: 24px;
+    width: 34px;
     padding : 4px 0px 0px 10px;
 }
 
@@ -63,4 +64,11 @@
     position: absolute;
     right : 400px;
     top : 340px;
+}
+
+.Searchbtn {
+    display: flex;
+    flex-direction: row;
+    margin-top : 50px;
+    margin-left: 50px;
 }
