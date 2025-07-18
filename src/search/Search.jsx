@@ -1,4 +1,4 @@
-import { div } from 'three/tsl';
+
 import './Search.css' 
 export default function Search() {
     return (
