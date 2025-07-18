@@ -10,6 +10,7 @@
     color : #E8FFD7;
     text-align: center;
     padding-top : 22px;
+    
 }
 
 .Nav #item {
@@ -40,4 +41,5 @@ ul{
     list-style: none;
     justify-content: space-around;
     gap : 20px;
+    padding-right: 15px;
 }
