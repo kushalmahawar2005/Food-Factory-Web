@@ -6,7 +6,7 @@ export default function Footer() {
                 <img src = "https://media-assets.swiggy.com/portal/testing/seo-home/Group.svg" alt = "add"/>
                 <p> © 2025 Swiggy Limited</p>
             
-            <div className="flex1">
+            <div className="flex1" id = "Footer">
                 <div className="company">
                     <h3>Company</h3>
                     <ul className="class">

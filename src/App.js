@@ -19,7 +19,7 @@ function App() {
     <Searchbtn />
     <About />
     </div>
-    <h1 className='Braverage'>Braverage</h1>
+    <h1 className='Braverage'>Food Items</h1>
     <div className='food'>
     <Itemcon />
     </div>
