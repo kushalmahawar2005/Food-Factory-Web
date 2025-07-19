@@ -27,7 +27,8 @@
 
 @media (max-width: 768px) {
     .Qr-container {
-        height: 250px;
+        height: 140px;
+        width: 100%;
     }
     
     .Container {
@@ -38,7 +39,8 @@
 
 @media (max-width: 600px) {
     .Qr-container {
-        height: 220px;
+        height: 120px;
+        width: 100%;
         
     }
     
