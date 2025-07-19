@@ -6,7 +6,6 @@
     padding-left: 30px;
     background-color: #F3F3F3;
     margin-top: 22px;
-    
 }
 
 #Search::placeholder {
@@ -32,6 +31,7 @@
     font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
 }
+
 .location {
     position: absolute;
     margin-left : 300px;
@@ -71,4 +71,129 @@
     flex-direction: row;
     margin-top : 50px;
     margin-left: 50px;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@media (max-width: 1200px) {
+    #Search-btn {
+        margin-left: 200px;
+        width: 280px;
+    }
+    
+    #Searchres {
+        width: 400px;
+    }
+    
+    .location {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Searchbtn {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 15px;
+    }
+    
+    #Search-btn {
+        margin-left: 0;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    #Searchres {
+        width: 100%;
+        max-width: 400px;
+        margin-left: 0;
+    }
+    
+    #Search {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .location {
+        position: relative;
+        margin-left: 15px;
+        top: 0;
+        margin-top: -45px;
+        z-index: 10;
+    }
+    
+    .lens {
+        position: relative;
+        right: 0;
+        top: 0;
+        margin-top: -45px;
+        margin-left: auto;
+        margin-right: 15px;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 600px) {
+    .Searchbtn {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 30px;
+    }
+    
+    #Search-btn {
+        height: 50px;
+        font-size: 16px;
+    }
+    
+    #Searchres {
+        height: 50px;
+        font-size: 16px;
+    }
+    
+    #Search {
+        height: 45px;
+        font-size: 16px;
+    }
+    
+    #Search-btn::placeholder,
+    #Searchres::placeholder,
+    #Search::placeholder {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Searchbtn {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+    
+    #Search-btn,
+    #Searchres,
+    #Search {
+        height: 45px;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+    
+    #Search-btn::placeholder,
+    #Searchres::placeholder,
+    #Search::placeholder {
+        font-size: 14px;
+    }
+    
+    .location {
+        height: 20px;
+        width: 28px;
+        margin-left: 10px;
+    }
+    
+    .lens {
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+    }
 }

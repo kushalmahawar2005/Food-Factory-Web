@@ -1,11 +1,17 @@
 .container {
-    height: 378px;
+    height: 408px;
     width: 350px;
     padding : 20px;
     border : 1px solid  #ccc;
     border-radius: 10px;
     flex-shrink: 0;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .Dineoutcon-container {
@@ -14,15 +20,14 @@
     scroll-behavior: smooth;
     margin-top: 200px;    
     gap : 20px;
-    padding : 10;
+    padding : 10px;
     margin-left: 130px;
-    
-   
 }
 
 .Dineoutcon-container::-webkit-scrollbar {
     display: none; 
 }
+
 .image-container {
     position: relative;
     width: 100%;
@@ -57,7 +62,6 @@
     font-weight: 800;
     font-size: 22px;
     z-index: 1;
-    
 }
 
 .data {
@@ -86,8 +90,7 @@
     width : 130px;
     height: 25px;
     border : none;
-   
-    }
+}
 
 .Table p{
     margin-top :3px;
@@ -99,9 +102,8 @@
     text-align: center;
     font-size: 14px;
     font-weight: 700;
-   
-    
 }
+
 .offer {
     display: flex;
     flex-direction: row;
@@ -113,9 +115,8 @@
     background-color: #1BA672;
     border-radius: 10px;
     margin-top : 15px;
+    margin-bottom: 8px;
     align-items: center;
-    
-    
 }
 
 .offer img {
@@ -130,4 +131,248 @@
     width : 100%;
     text-align: center;
     border-radius: 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+@media (max-width: 1200px) {
+    .Dineoutcon-container {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
+    .container {
+        width: 320px;
+        height: 390px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .Dineoutcon-container {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 150px;
+        gap: 15px;
+        padding: 5px;
+    }
+    
+    .container {
+        width: 280px;
+        height: 390px;
+        padding: 15px;
+    }
+    
+    .image-container {
+        height: 160px;
+    }
+    
+    .image-title {
+        font-size: 20px;
+        bottom: 8px;
+        left: 8px;
+    }
+    
+    .data {
+        font-size: 14px;
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .offer {
+        height: 28px;
+        margin-top: 15px;
+    }
+    
+    .offer img {
+        height: 22px;
+        width: 22px;
+    }
+    
+    .h3 {
+        font-size: 12px;
+    }
+    
+    .container h4 {
+        height: 28px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 600px) {
+    .Dineoutcon-container {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 120px;
+        gap: 12px;
+    }
+    
+    .container {
+        width: 250px;
+        height: 320px;
+        padding: 12px;
+    }
+    
+    .image-container {
+        height: 140px;
+    }
+    
+    .image-title {
+        font-size: 18px;
+        bottom: 6px;
+        left: 6px;
+    }
+    
+    .data {
+        font-size: 13px;
+        gap: 6px;
+        margin-bottom: 12px;
+    }
+    
+    .Table {
+        width: 110px;
+        height: 22px;
+    }
+    
+    .Table p {
+        font-size: 12px;
+    }
+    
+    .h3 {
+        font-size: 11px;
+    }
+    
+    .offer {
+        height: 25px;
+        margin-top: 10px;
+    }
+    
+    .offer img {
+        height: 20px;
+        width: 20px;
+    }
+    
+    .container h4 {
+        height: 25px;
+        font-size: 11px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 480px) {
+    .Dineoutcon-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 100px;
+        gap: 10px;
+    }
+    
+    .container {
+        width: 220px;
+        height: 300px;
+        padding: 10px;
+    }
+    
+    .image-container {
+        height: 120px;
+    }
+    
+    .image-title {
+        font-size: 16px;
+        bottom: 5px;
+        left: 5px;
+    }
+    
+    .data {
+        font-size: 12px;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .Table {
+        width: 100px;
+        height: 20px;
+    }
+    
+    .Table p {
+        font-size: 11px;
+    }
+    
+    .h3 {
+        font-size: 10px;
+    }
+    
+    .offer {
+        height: 22px;
+        margin-top: 8px;
+    }
+    
+    .offer img {
+        height: 18px;
+        width: 18px;
+    }
+    
+    .container h4 {
+        height: 22px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 360px) {
+    .Dineoutcon-container {
+        margin-left: 5px;
+        margin-right: 5px;
+        gap: 8px;
+    }
+    
+    .container {
+        width: 200px;
+        height: 280px;
+        padding: 8px;
+    }
+    
+    .image-container {
+        height: 110px;
+    }
+    
+    .image-title {
+        font-size: 14px;
+    }
+    
+    .data {
+        font-size: 11px;
+    }
+    
+    .Table {
+        width: 90px;
+        height: 18px;
+    }
+    
+    .Table p {
+        font-size: 10px;
+    }
+    
+    .h3 {
+        font-size: 9px;
+    }
+    
+    .offer {
+        height: 20px;
+        margin-top: 6px;
+    }
+    
+    .offer img {
+        height: 16px;
+        width: 16px;
+    }
+    
+    .container h4 {
+        height: 20px;
+        font-size: 9px;
+        font-weight: 600;
+    }
 }

@@ -1,8 +1,72 @@
 .Qr-container {
     width  : 100%;
     height : 293px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.Qr-container:hover {
+    transform: scale(1.01);
 }
 
 .Container {
     margin-top: 115px;
+    padding: 0 20px;
+}
+
+@media (max-width: 1200px) {
+    .Qr-container {
+        height: 280px;
+    }
+    
+    .Container {
+        margin-top: 100px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Qr-container {
+        height: 250px;
+    }
+    
+    .Container {
+        margin-top: 80px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Qr-container {
+        height: 220px;
+        
+    }
+    
+    .Container {
+        margin-top: 60px;
+        padding: 0 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Qr-container {
+        height: 100px;
+        width: 100%;
+    }
+    
+    .Container {
+        margin-top: 50px;
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 360px) {
+    .Qr-container {
+        height: 180px;
+    }
+    
+    .Container {
+        margin-top: 40px;
+        padding: 0 3px;
+    }
 }

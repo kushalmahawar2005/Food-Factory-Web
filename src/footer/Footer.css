@@ -9,11 +9,15 @@
     padding-left: 210px;
     padding-top: 60px;
 }
+
+.ad img {
+    transition: opacity 0.3s ease;
+}
+
 .ad p {
     margin-top: 1px;
     color : #606468;
     font-weight: 600;
-    
 }
 
 .flex1 {
@@ -23,7 +27,6 @@
     align-items: start;
     gap : 85px;
     margin-left: 300px;
-    
 }
 
 .class {
@@ -38,6 +41,11 @@
     cursor: pointer;
 }
 
+.class li:hover {
+    color: #FF5200;
+    transition: color 0.3s ease;
+}
+
 h3 {
     font-size: 18px;
     font-weight: 600;
@@ -47,6 +55,7 @@ h1{
     font-size: 27px;
     padding-left: 20px;
 }
+
 #container {
     display: flex;
     flex-direction: row;
@@ -56,4 +65,239 @@ h1{
     gap : 50px;
     color :rgba(2, 7, 15, 0.822);
     cursor: pointer;
+}
+
+#container img {
+    transition: transform 0.3s ease;
+}
+
+#container img:hover {
+    transform: scale(1.05);
+}
+
+
+
+@media (max-width: 1200px) {
+    .ad {
+        padding-left: 150px;
+        padding-top: 50px;
+    }
+    
+    .flex1 {
+        margin-left: 200px;
+        gap: 60px;
+    }
+    
+    .class {
+        font-size: 16px;
+    }
+    
+    h3 {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    #container {
+        gap: 40px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Whole-container {
+        margin-top: 80px;
+    }
+    
+    .ad {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 40px;
+    }
+    
+    .ad img {
+        display: none;
+    }
+    
+    .flex1 {
+        margin-left: 0;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .class {
+        font-size: 15px;
+        gap: 8px;
+    }
+    
+    h3 {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+    
+    h1 {
+        font-size: 22px;
+        padding-left: 15px;
+        text-align: center;
+    }
+    
+    #container {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+    
+    #container img {
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .Whole-container {
+        margin-top: 60px;
+    }
+    
+    .ad {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+    }
+    
+    .ad img {
+        display: none;
+    }
+    
+    .flex1 {
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .class {
+        font-size: 14px;
+        gap: 6px;
+        align-items: center;
+    }
+    
+    h3 {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    
+    h1 {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    
+    #container {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+    
+    #container img {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Whole-container {
+        margin-top: 50px;
+    }
+    
+    .ad {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 25px;
+    }
+    
+    .ad img {
+        display: none;
+    }
+    
+    .flex1 {
+        gap: 25px;
+    }
+    
+    .class {
+        font-size: 13px;
+        gap: 5px;
+    }
+    
+    h3 {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    
+    h1 {
+        font-size: 18px;
+        padding-left: 5px;
+    }
+    
+    #container {
+        padding: 15px 10px;
+        gap: 15px;
+    }
+    
+    #container img {
+        max-width: 160px;
+    }
+    
+    .ad p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px) {
+    .Whole-container {
+        margin-top: 40px;
+    }
+    
+    .ad {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+    }
+    
+    .ad img {
+        display: none;
+    }
+    
+    .flex1 {
+        gap: 20px;
+    }
+    
+    .class {
+        font-size: 12px;
+        gap: 4px;
+    }
+    
+    h3 {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    
+    h1 {
+        font-size: 16px;
+        padding-left: 0;
+    }
+    
+    #container {
+        padding: 10px 5px;
+        gap: 10px;
+    }
+    
+    #container img {
+        max-width: 140px;
+    }
+    
+    .ad p {
+        font-size: 12px;
+    }
 }
